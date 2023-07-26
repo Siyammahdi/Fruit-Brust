@@ -9,6 +9,9 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Font Awesome Kit -->
+<script src="https://kit.fontawesome.com/002264b814.js" crossorigin="anonymous"></script>
+
     <!-- Custom Styles -->
  <script>
     tailwind.config = {
@@ -16,6 +19,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'nav-bg': '#F85559',
           }
         }
       }
@@ -25,7 +29,30 @@
 
 </head>
 <body>
-    <header>
+    <header class=" mx-40 ">
+
+      <nav>
+        <div class="navbar bg-nav-bg rounded-full mt-8 justify-between items-center px-10">
+          <div>
+            <ul class="flex gap-6 text-white text-sm">
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">All Fruits</a></li>
+            </ul>
+          </div>
+          <div>
+            <img src="./images/logo.png" alt="">
+            <h1 class="text-3xl text-white ml-4 font-semibold">Fruit Brust</h1>
+          </div>
+          <div class="flex-none gap-2">
+            <div class="form-control">
+              <input type="text" placeholder="Search Here" class="input h-10 w-64 rounded-3xl text-xs" />
+              <i class="fa-solid fa-magnifying-glass absolute top-16 right-56 text-gray-500"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     </header>
     <main>
