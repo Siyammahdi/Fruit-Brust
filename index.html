@@ -19,20 +19,31 @@
         extend: {
           colors: {
             clifford: '#da373d',
-            'nav-bg': '#F85559',
+            'primary-bg': '#F85559',
+            backgroundImage: {
+              'banner-bg': "url(./images/banner1.png)"
+            }
           }
         }
       }
     }
   </script>
 
+  <!-- <style>
+    #slide1{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(128, 128, 128, 0.274));
+    }
+  </style> -->
+
 
 </head>
 <body>
     <header class=" mx-40 ">
 
+<!-- Navbar Starts from here -->
+
       <nav>
-        <div class="navbar bg-nav-bg rounded-full mt-8 justify-between items-center px-10">
+        <div class="navbar bg-primary-bg rounded-full my-8 justify-between items-center px-10">
           <div>
             <ul class="flex gap-6 text-white text-sm">
               <li><a href="">Home</a></li>
@@ -54,8 +65,88 @@
         </div>
       </nav>
 
+      <!-- Banner carousel section starts from here -->
+
+        <div class="carousel w-full">
+          <!-- Banner Slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full bg-[url(./images/banner1.png)] flex-col justify-center items-center space-y-6">
+              <h2 class="text-5xl text-white font-bold text-center">Exotic tastes at your <br> doorstep</h2>
+              <p class="text-white">We supply highly quality organic products</p>
+              <button class="btn bg-primary-bg text-white border-none hover:bg-red-500">Shop Now</button>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle bg-gray-950 text-gray-100 border-none">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-gray-950 text-gray-100 border-none">❯</a>
+              </div>
+            </div>
+            <!-- Banner Slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full bg-[url(./images/banner2.png)] flex-col justify-center items-center space-y-6">
+              <h2 class="text-5xl text-white font-bold text-center">Exotic tastes at your <br> doorstep</h2>
+              <p class="text-white">We supply highly quality organic products</p>
+              <button class="btn bg-primary-bg text-white border-none hover:bg-red-500">Shop Now</button>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle bg-gray-950 text-gray-100 border-none">❮</a> 
+              <a href="#slide3" class="btn btn-circle bg-gray-950 text-gray-100 border-none">❯</a>
+            </div>
+          </div> 
+          <!-- Banner Slide 3 -->
+          <div id="slide3" class="carousel-item relative w-full bg-[url(./images/banner3.png)] flex-col justify-center items-center space-y-6">
+            <h2 class="text-5xl text-white font-bold text-center">Exotic tastes at your <br> doorstep</h2>
+            <p class="text-white">We supply highly quality organic products</p>
+            <button class="btn bg-primary-bg text-white border-none hover:bg-red-500">Shop Now</button>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle bg-gray-950 text-gray-100 border-none">❮</a> 
+              <a href="#slide4" class="btn btn-circle bg-gray-950 text-gray-100 border-none">❯</a>
+            </div>
+          </div> 
+          <!-- Banner Slide 4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="/images//banner4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle bg-gray-950 text-gray-100 border-none">❮</a> 
+              <a href="#slide1" class="btn btn-circle bg-gray-950 text-gray-100 border-none">❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-evenly mx-20 py-4 bg-white shadow-xl text-center relative bottom-20">
+          <div>
+            <img src="./images/fruit1.png" alt="">
+            <h4>Grapes</h4>
+          </div>
+          <div>
+            <img src="./images/fruit2.png" alt="">
+            <h4>Orange</h4>
+          </div>
+          <div>
+            <img src="./images/fruit3.png" alt="">
+            <h4>Mango</h4>
+          </div>
+          <div>
+            <img src="./images/fruit4.png" alt="">
+            <h4>Strawberry</h4>
+          </div>
+          <div>
+            <img src="./images/fruit5.png" alt="">
+            <h4>Orange</h4>
+          </div>
+        </div>
+
     </header>
     <main>
+
+
+      <!-- Deal Section -->
+      <section>
+        <div>
+          <div>
+            <h3>Deal of the day</h3>
+            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div>
+            
+          </div>
+        </div>
+      </section>
+
 
     </main>
     <footer>
